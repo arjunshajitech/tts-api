@@ -25,19 +25,42 @@ Follow these steps to set up the project on your local machine:
     pip install -r requirements.txt
     ```
 
-4. **Start the Flask app** on port 2233 by running:
+4. **Start the Flask app** on port 8888 by running:
 
     ```bash
-    flask --app main.py run --port 2233
+    flask --app main.py run --port 8888
     ```
 
-    The application will start running at `http://127.0.0.1:2233`.
+    The application will start running at `http://127.0.0.1:8888`.
 
 ## API Endpoints
 
 ### 1. Health Check Endpoint
 
-You can check if the server is running by sending a request to the health check endpoint:
-
 ```bash
 curl --location 'http://127.0.0.1:8888'
+```
+
+### 2. Voice Cloning
+
+
+```bash
+curl --location 'http://127.0.0.1:8888/tts/voice-cloning' \
+  --form 'text=@"/home/arjun/Desktop/tts-api/text/test.txt"' \
+  --form 'voice=@"/home/arjun/Desktop/tts-api/audio/test.wav"'
+```
+
+
+## Input
+
+audio
+
+<audio controls src="test/test.wav" title="Title"></audio>
+
+text
+
+Hello, my name is sen and i am a software engineer at google working as a backend lead.
+
+## Output
+
+<audio controls src="output/output.wav" title="Title"></audio>
