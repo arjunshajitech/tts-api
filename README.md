@@ -55,7 +55,7 @@ curl --location 'http://127.0.0.1:8888/tts/voice-cloning' \
 
 audio
 
-<audio controls src="test/test.wav" title="Title"></audio>
+<audio controls src="https://github.com/arjunshajitech/tts-api/test/test.wav" title="Title"></audio>
 
 text
 
@@ -63,4 +63,4 @@ Hello, my name is sen and i am a software engineer at google working as a backen
 
 ## Output
 
-<audio controls src="output/output.wav" title="Title"></audio>
+<audio controls src="https://github.com/arjunshajitech/tts-api/output/output.wav" title="Title"></audio>
