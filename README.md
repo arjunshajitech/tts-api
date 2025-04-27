@@ -49,18 +49,3 @@ curl --location 'http://127.0.0.1:8888/tts/voice-cloning' \
   --form 'text=@"/home/arjun/Desktop/tts-api/text/test.txt"' \
   --form 'voice=@"/home/arjun/Desktop/tts-api/audio/test.wav"'
 ```
-
-
-## Input
-
-audio
-
-<audio controls src="https://github.com/arjunshajitech/tts-api/master/test/test.wav" title="Title"></audio>
-
-text
-
-Hello, my name is sen and i am a software engineer at google working as a backend lead.
-
-## Output
-
-<audio controls src="https://github.com/arjunshajitech/tts-api/master/output/output.wav" title="Title"></audio>
